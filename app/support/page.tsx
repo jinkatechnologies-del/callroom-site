@@ -1,3 +1,5 @@
+import ProgramInquiryForm from "@/components/ProgramInquiryForm";
+
 export default function SupportPage() {
   return (
     <section className="mx-auto max-w-2xl px-6 py-20">
@@ -5,29 +7,33 @@ export default function SupportPage() {
         Support
       </h1>
       <p className="mt-4 text-[15px] leading-relaxed text-muted">
-        Have a question, ran into a bug, or want to talk about bringing
-        CallRoom to your program? Reach out, a real person reads every
-        message.
+        Have a question or ran into a bug? Reach out, a real person reads
+        every message.
       </p>
 
-      <div className="mt-10 grid gap-4 sm:grid-cols-2">
+      <div className="mt-10 rounded-2xl border border-border bg-surface p-6">
+        <h3 className="text-sm font-semibold text-foreground">
+          Email Support
+        </h3>
         <a
           href="mailto:support@callroom.md"
-          className="rounded-2xl border border-border bg-surface p-6 transition-colors hover:border-white/20"
+          className="mt-2 inline-block text-sm text-accent underline underline-offset-2 hover:text-accent-hover"
         >
-          <h3 className="text-sm font-semibold text-accent">Email Support</h3>
-          <p className="mt-2 text-sm text-muted">support@callroom.md</p>
+          support@callroom.md
         </a>
+      </div>
 
-        <a
-          href="mailto:admin@callroom.md?subject=Program%20Inquiry"
-          className="rounded-2xl border border-border bg-surface p-6 transition-colors hover:border-white/20"
-        >
-          <h3 className="text-sm font-semibold text-blue">Program Inquiries</h3>
-          <p className="mt-2 text-sm text-muted">
-            Bringing CallRoom to your residency program
-          </p>
-        </a>
+      <div className="mt-10">
+        <h2 className="text-lg font-bold tracking-tight">
+          Program Inquiries
+        </h2>
+        <p className="mt-1.5 text-sm text-muted">
+          Bringing CallRoom to your residency program? Tell us a bit about
+          it.
+        </p>
+        <div className="mt-4">
+          <ProgramInquiryForm />
+        </div>
       </div>
 
       <div className="mt-10 rounded-2xl border border-border bg-surface p-6">

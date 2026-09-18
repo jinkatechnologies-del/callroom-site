@@ -54,11 +54,10 @@ export default function OurStoryPage() {
           />
           <div>
             <p className="text-[15px] leading-relaxed text-foreground/90">
-              &ldquo;I built the first version of CallRoom for my own
-              team, because I needed it to exist. Every decision since
-              then, from how we handle patient data to what the AI is and
-              isn&apos;t allowed to do, has been made by someone who
-              actually carries the pager.&rdquo;
+              &ldquo;I remember sitting up in bed one night, remembering I
+              forgot to sign a note. After going back to the hospital at
+              11 PM, I knew there had to be a better way. CallRoom is the
+              app I wish I had when I started residency.&rdquo;
             </p>
             <p className="mt-4 text-sm font-semibold text-foreground">
               Sanjay Jinka, MD
@@ -67,11 +66,6 @@ export default function OurStoryPage() {
           </div>
         </div>
       </div>
-
-      <p className="mt-8 text-[15px] leading-relaxed text-foreground">
-        CallRoom is built for residents and the physicians training them,
-        across every specialty where the floor never really stops moving.
-      </p>
     </section>
   );
 }

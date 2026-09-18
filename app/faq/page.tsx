@@ -1,15 +1,27 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 const faqs = [
   {
     q: "Who is CallRoom for?",
-    a: "CallRoom is built for residents, and for the physicians and programs that train them. It started with surgical residency but the core problem, coordinating schedules, patient tasks, and documentation across a busy training program, isn't specialty-specific. Any residency program looking for a better way to run its floor can use it.",
+    a: "CallRoom is built for residents, medical students, attendings, and all providers. It started with surgical residency but the core problem: coordinating schedules, patient tasks, and documentation across a busy training program, isn't specialty-specific. Any provider looking for a better way to manage patients can use it.",
   },
   {
     q: "Is CallRoom HIPAA-compliant?",
-    a: "CallRoom is built on HIPAA-eligible infrastructure with a signed Business Associate Agreement in place with our cloud provider, encryption in transit and at rest, and audit logging on access to protected data. See our HIPAA Compliance page for details.",
+    a: (
+      <>
+        CallRoom is built on HIPAA-eligible infrastructure with a signed
+        Business Associate Agreement in place with our cloud provider,
+        encryption in transit and at rest, and audit logging on access to
+        protected data. See our{" "}
+        <Link href="/security" className="text-accent hover:underline">
+          Security & Trust
+        </Link>{" "}
+        page for details.
+      </>
+    ),
   },
   {
     q: "Can I sign up as an individual resident right now?",

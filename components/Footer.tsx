@@ -59,7 +59,16 @@ export default function Footer() {
 
         <div className="mt-8 border-t border-border pt-6">
           <p className="text-xs text-muted">
-            © {new Date().getFullYear()} Jinka Technologies, Inc. All rights reserved.
+            © {new Date().getFullYear()}{" "}
+            <a
+              href="https://jinkatechnologies.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-foreground hover:underline"
+            >
+              Jinka Technologies, Inc.
+            </a>{" "}
+            All rights reserved.
           </p>
         </div>
       </div>

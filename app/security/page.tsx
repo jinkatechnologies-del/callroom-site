@@ -14,7 +14,7 @@ const pillars = [
   {
     title: "Minimum necessary, by design",
     color: "text-purple",
-    desc: "CallRoom doesn't ask for patient names, dates of birth, or medical record numbers. The product is built around room numbers, bed numbers, and initials from the ground up, not as an afterthought.",
+    desc: "CallRoom is built around room numbers, bed numbers, and initials rather than full patient names or medical record numbers, and guides users toward minimal identifiers from the first screen.",
   },
   {
     title: "AI runs server-side",
@@ -22,12 +22,12 @@ const pillars = [
     desc: "Clinical input never goes straight from your device to a third-party AI API. It passes through access-controlled infrastructure we operate, under our Business Associate Agreement, every time.",
   },
   {
-    title: "A signed BAA, not a promise",
+    title: "Business Associate Agreement",
     color: "text-blue",
-    desc: "Jinka Technologies has an executed Business Associate Agreement with our cloud infrastructure provider covering every service that touches clinical content. Not planned. Signed.",
+    desc: "Jinka Technologies has an executed Business Associate Agreement with our cloud infrastructure provider, covering every service that touches clinical content.",
   },
   {
-    title: "Defensible, not derivative",
+    title: "Patent-pending technology",
     color: "text-teal",
     desc: "The core technology is patent-pending. CallRoom was built as clinical infrastructure from day one, not a chat window bolted onto someone else's AI model.",
   },
@@ -43,7 +43,7 @@ export default function SecurityPage() {
         <p className="mx-auto mt-4 max-w-xl text-muted">
           CallRoom handles clinical workflow content, so the infrastructure
           underneath it doesn&apos;t get to be an afterthought. Here is
-          what that actually means, in plain language.
+          what that actually means.
         </p>
       </section>
 
@@ -68,19 +68,16 @@ export default function SecurityPage() {
       <section className="border-t border-border bg-surface">
         <div className="mx-auto max-w-3xl px-6 py-16">
           <h2 className="text-xl font-bold tracking-tight">
-            Why this matters more than a badge
+            How CallRoom is built differently
           </h2>
           <p className="mt-4 text-[15px] leading-relaxed text-muted">
-            A lot of new clinical software is a thin interface in front of
-            a general-purpose AI model, with patient-adjacent text sent
-            straight to a third-party API and no meaningful audit trail
-            behind it. CallRoom was built the other way: every AI call
-            runs through our own access-controlled infrastructure, every
-            touch of clinical content is logged, and the product was
-            designed to minimize what it ever needs to collect in the
-            first place. That is a different, slower, more deliberate way
-            to build, and it is the only way we think clinical software
-            should be built.
+            Most new clinical AI products send your input straight to a
+            general-purpose AI API, with no audit trail behind it. CallRoom
+            runs every AI call through infrastructure we control, logs
+            every touch of clinical content, and only collects what it
+            needs to. It took longer to build it this way. We think
+            it&apos;s the right way to build software that touches patient
+            care.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
