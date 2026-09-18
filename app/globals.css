@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --background: #060810;
+  --surface: #101828;
+  --surface-elevated: #16213a;
+  --foreground: #edf2ff;
+  --muted: #7a90b8;
+  --accent: #ff9f0a;
+  --accent-hover: #ffb03d;
+  --blue: #4f8ef7;
+  --purple: #9b72f7;
+  --teal: #13c4b4;
+  --border: rgba(237, 242, 255, 0.09);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-blue: var(--blue);
+  --color-purple: var(--purple);
+  --color-teal: var(--teal);
+  --color-border: var(--border);
+  --font-sans: var(--font-stack);
+}
+
+:root {
+  --font-stack: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+    "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-stack);
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--background);
+}

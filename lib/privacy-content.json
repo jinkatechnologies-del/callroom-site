@@ -1,0 +1,302 @@
+[
+  {
+    "type": "meta",
+    "text": "Effective Date: September 6, 2026  |  Last Updated: September 9, 2026"
+  },
+  {
+    "type": "p",
+    "text": "This Privacy Policy explains how Jinka Technologies, Inc. (\"Company,\" \"we,\" \"us\") collects, uses, stores, and protects your information when you use the CallRoom mobile application (\"App\"). By using CallRoom, you agree to the practices described here."
+  },
+  {
+    "type": "p",
+    "text": "HIPAA NOTICE: CallRoom is a personal workflow tool, not an official medical record system. Do not use it as a substitute for your institution's EHR. If you choose to enter patient-identifiable information, you are solely responsible for HIPAA compliance. See Section 6 for details."
+  },
+  {
+    "type": "h2",
+    "text": "1. Who This Policy Covers"
+  },
+  {
+    "type": "p",
+    "text": "CallRoom is intended for licensed medical residents, physicians, students, APPs, and other clinical staff. CallRoom is not intended for use by patients or the general public, and we do not knowingly collect information from patients directly through the App. This Policy applies to individual users of CallRoom in the United States."
+  },
+  {
+    "type": "h2",
+    "text": "2. Information We Collect"
+  },
+  {
+    "type": "h3",
+    "text": "2.1 Account Information"
+  },
+  {
+    "type": "p",
+    "text": "When you create an account we collect your name, email address, and authentication credentials. We may also collect optional profile information including PGY level, specialty, and institutional affiliation you choose to provide. Passwords are stored in hashed form, we never store plaintext passwords. If you sign in with Google or Apple, we receive only the information those services share with us to verify your identity."
+  },
+  {
+    "type": "h3",
+    "text": "2.2 Clinical Workflow Content You Create"
+  },
+  {
+    "type": "p",
+    "text": "CallRoom is designed for you to enter clinical workflow information as part of your professional duties, including but not limited to:"
+  },
+  {
+    "type": "ul",
+    "items": [
+      "Board entries (patient task tracking using room/bed identifiers or initials, see Section 6 on patient data)",
+      "Planner and call schedule entries",
+      "Clinical notes and AI-generated bullet summaries",
+      "Operative note drafts and case preparation guides generated using AI features",
+      "Attending physician preferences and contact information you choose to record",
+      "Sign-out content and handoff documentation"
+    ]
+  },
+  {
+    "type": "p",
+    "text": "We refer to this content collectively as \"Clinical Workflow Content.\" Clinical Workflow Content may constitute Protected Health Information (PHI) under HIPAA if it contains information that could identify a patient, even indirectly. See Section 6."
+  },
+  {
+    "type": "h3",
+    "text": "2.3 Wellness Data (Your Own)"
+  },
+  {
+    "type": "p",
+    "text": "If you use CallRoom's Wellness features, we collect self-reported information about your own wellbeing including mood, fatigue, sleep duration, and stress level, and may correlate this with shift activity data (start/stop times, task completion volume) already present in the platform. This is your personal data, not patient data, and is treated separately from Clinical Workflow Content. Wellness data is never shared with your employer, program director, or institution without your explicit consent."
+  },
+  {
+    "type": "h3",
+    "text": "2.4 Authentication Data"
+  },
+  {
+    "type": "p",
+    "text": "We collect your chosen sign-in method (email/password, Google, or Apple). Biometric authentication (Face ID / Touch ID) is processed entirely by your device's operating system via the device Secure Enclave. We never receive, store, or process your biometric data."
+  },
+  {
+    "type": "h3",
+    "text": "2.5 Team and Collaboration Data"
+  },
+  {
+    "type": "p",
+    "text": "If you join or create a Team within CallRoom, we collect information necessary to operate that Team, including team name, institution name, invite codes, member roster, and roles (e.g., chief resident vs. junior resident). Content you choose to share with your Team becomes visible to other Team members according to the sharing permissions you select."
+  },
+  {
+    "type": "h3",
+    "text": "2.6 AI Processing"
+  },
+  {
+    "type": "p",
+    "text": "When you use AI features, including clinical task parsing, operative note generation, case preparation guides, PIMP question generation, CPT and ICD-10 code suggestions, and sign-out generation, your input text is transmitted to Google Gemini via Firebase AI (Vertex AI) for processing. See Section 5.2 for details."
+  },
+  {
+    "type": "h3",
+    "text": "2.7 Device and Usage Data"
+  },
+  {
+    "type": "p",
+    "text": "We collect: push notification tokens to deliver alerts you configure (notification content is never designed to include patient information, see Section 5.4); device type, OS version, and app version; crash logs and basic diagnostic information; and anonymized usage analytics to improve the App."
+  },
+  {
+    "type": "h3",
+    "text": "2.8 What We Do Not Collect"
+  },
+  {
+    "type": "p",
+    "text": "We do not intentionally collect patient names, dates of birth, medical record numbers, Social Security numbers, or other direct patient identifiers. We do not collect payment card details beyond what is necessary for subscription processing, which is handled by Apple App Store or Google Play."
+  },
+  {
+    "type": "h2",
+    "text": "3. How We Use Your Information"
+  },
+  {
+    "type": "p",
+    "text": "We use your information to:"
+  },
+  {
+    "type": "ul",
+    "items": [
+      "Provide, maintain, and improve the App's core features (Board, Planner, Notes, Plugins, Wellness, Teams)",
+      "Power AI-assisted features using Google Cloud's Vertex AI / Gemini platform",
+      "Enable Team collaboration features",
+      "Send push notifications relevant to your use of the App",
+      "Process subscription payments",
+      "Respond to support and legal inquiries",
+      "Maintain security, detect abuse, and comply with legal obligations"
+    ]
+  },
+  {
+    "type": "h2",
+    "text": "4. How We Share Your Information"
+  },
+  {
+    "type": "p",
+    "text": "We share information:"
+  },
+  {
+    "type": "ul",
+    "items": [
+      "Within your Team, according to the sharing settings you or your Team's chief configure",
+      "With service providers who process data on our behalf under contractual confidentiality obligations, currently including Google Cloud / Firebase (cloud infrastructure and AI processing) and Apple / Google (push notifications and payment processing)",
+      "With legal authorities when required by law, court order, or to prevent imminent harm to you or others",
+      "In connection with a merger, acquisition, or sale of assets, subject to the same protections described here, with notice to users",
+      "With anyone else only with your explicit consent"
+    ]
+  },
+  {
+    "type": "p",
+    "text": "We may share de-identified or aggregated data with research partners, analytics providers, or other third parties. Any sharing of individually identifiable information beyond the purposes described above will be disclosed through an updated Privacy Policy."
+  },
+  {
+    "type": "h2",
+    "text": "5. Data Storage and Security"
+  },
+  {
+    "type": "h3",
+    "text": "5.1 Local Storage"
+  },
+  {
+    "type": "p",
+    "text": "Clinical entries, tasks, and preferences are stored locally on your device using device-local persistent storage, protected by your device's native encryption and access controls."
+  },
+  {
+    "type": "h3",
+    "text": "5.2 Cloud Infrastructure and AI Processing"
+  },
+  {
+    "type": "p",
+    "text": "CallRoom is built on Google Cloud Platform and Firebase, including Cloud Firestore (database), Cloud Functions (application logic), Cloud Storage (file storage), and Vertex AI / Gemini (AI features). All processing of Clinical Workflow Content occurs within U.S.-based Google Cloud regions. Data is encrypted in transit (TLS) and at rest."
+  },
+  {
+    "type": "p",
+    "text": "AI PROCESSING NOTICE: When you use AI features, your input text is transmitted to Google Gemini via Firebase AI / Vertex AI. Avoid entering individually identifiable patient information (names, MRNs, dates of birth) in AI-parsed fields. We are working to establish and confirm Business Associate Agreements with Google Cloud covering AI processing infrastructure and will update this Policy when that status is confirmed."
+  },
+  {
+    "type": "h3",
+    "text": "5.3 Business Associate Agreement"
+  },
+  {
+    "type": "p",
+    "text": "Jinka Technologies, Inc. is actively pursuing a Business Associate Agreement (BAA) with Google Cloud covering the infrastructure used to process Clinical Workflow Content. Enterprise or institutional deployments requiring a confirmed BAA between Jinka Technologies and your institution should contact legal@callroom.md before program-wide deployment."
+  },
+  {
+    "type": "h3",
+    "text": "5.4 Notifications"
+  },
+  {
+    "type": "p",
+    "text": "Push notifications sent by CallRoom contain only generic text (e.g., \"You have a task due,\" \"Your shift sign-out is ready\") and are not designed to include patient-identifiable information, because notification delivery passes through Apple's or Google's push notification infrastructure outside our BAA coverage."
+  },
+  {
+    "type": "h3",
+    "text": "5.5 Security Measures"
+  },
+  {
+    "type": "p",
+    "text": "We implement TLS encryption for all data in transit, encrypted storage at rest, row-level security rules limiting data access to authorized users only, hashed password storage, and biometric authentication support via device Secure Enclave. No method of electronic transmission or storage is 100% secure, and we cannot guarantee absolute security."
+  },
+  {
+    "type": "h3",
+    "text": "5.6 Plugins and Network Access"
+  },
+  {
+    "type": "p",
+    "text": "CallRoom's Plugin feature allows users to build and share custom interactive tools. Unlike the rest of the App, Plugin content is not restricted from accessing external websites or network services. A Plugin, including one shared with you by another user, or in the future, downloaded from a CallRoom Marketplace, may transmit data to or retrieve data from third-party servers we do not control and that are not covered by our Google Cloud Business Associate Agreement."
+  },
+  {
+    "type": "p",
+    "text": "Do not enter patient-identifiable information into any Plugin. We recommend caution when installing or running Plugins shared by other users, particularly regarding any information a Plugin might send externally. The Company is not responsible for the data practices of any third-party website or service a Plugin may access."
+  },
+  {
+    "type": "h2",
+    "text": "6. Your Responsibility Regarding Patient Information"
+  },
+  {
+    "type": "p",
+    "text": "CallRoom is designed to minimize entry of direct patient identifiers. When entering Board or Note content, use room numbers, bed numbers, or patient initials rather than full names, dates of birth, or medical record numbers. You are responsible for:"
+  },
+  {
+    "type": "ul",
+    "items": [
+      "Exercising professional judgment about what clinical detail is appropriate to enter into the App",
+      "Reviewing and independently verifying all AI-generated content before use in any medical record",
+      "Ensuring your use of the App complies with HIPAA, your institution's privacy and security policies, and all applicable state laws"
+    ]
+  },
+  {
+    "type": "p",
+    "text": "CallRoom is intended as a personal workflow tool, the digital equivalent of the paper index cards and pocket notes residents have always used, individual use of the App by residents and clinicians does not create a HIPAA business associate relationship, and you remain responsible for ensuring what you enter is consistent with your institution's policies."
+  },
+  {
+    "type": "h2",
+    "text": "7. Data Retention and Deletion"
+  },
+  {
+    "type": "p",
+    "text": "You may delete your account at any time from Settings within the App. Account deletion permanently removes your personal profile, board entries, notes, plugins, operative notes, case preparation guides, and attending preference data from our servers within 30 days. You will be removed from any Teams you belong to."
+  },
+  {
+    "type": "p",
+    "text": "Content you contributed to a shared Team context that other Team members continue to rely on (e.g., completed tasks on a shared board) may persist after your account deletion as part of that Team's record. Anonymized usage analytics may be retained indefinitely as they cannot identify individuals. Certain data may be retained longer where required by applicable law."
+  },
+  {
+    "type": "h2",
+    "text": "8. Your Rights and Choices"
+  },
+  {
+    "type": "p",
+    "text": "You have the right to:"
+  },
+  {
+    "type": "ul",
+    "items": [
+      "Access a copy of the personal data we hold about you",
+      "Correct inaccurate personal data",
+      "Delete your account and associated data (see Section 7)",
+      "Export your data in a machine-readable format",
+      "Opt out of non-essential analytics",
+      "Manage notification permissions through your device settings"
+    ]
+  },
+  {
+    "type": "p",
+    "text": "To exercise any of these rights, contact privacy@callroom.md. We will respond within 30 days."
+  },
+  {
+    "type": "h2",
+    "text": "9. Children's Privacy"
+  },
+  {
+    "type": "p",
+    "text": "CallRoom is intended for use by licensed medical professionals and trainees and is not directed at anyone under 18. We do not knowingly collect information from minors. If you believe we have inadvertently collected such information, contact privacy@callroom.md and we will delete it promptly."
+  },
+  {
+    "type": "h2",
+    "text": "10. Changes to This Policy"
+  },
+  {
+    "type": "p",
+    "text": "We may update this Privacy Policy periodically. Material changes will be communicated via in-app notice and by updating the date above. Continued use of the App after changes take effect constitutes acceptance of the revised Policy."
+  },
+  {
+    "type": "h2",
+    "text": "11. Contact Us"
+  },
+  {
+    "type": "p",
+    "text": "Privacy inquiries: privacy@callroom.md"
+  },
+  {
+    "type": "p",
+    "text": "Legal / BAA inquiries: legal@callroom.md"
+  },
+  {
+    "type": "p",
+    "text": "Account support: support@callroom.md"
+  },
+  {
+    "type": "p",
+    "text": "Jinka Technologies, Inc.  |  jinkatechnologies.com  |  callroom.md"
+  },
+  {
+    "type": "p",
+    "text": "CallRoom is a product of Jinka Technologies, Inc.  \u2022  \"Built on call, for call\""
+  }
+]

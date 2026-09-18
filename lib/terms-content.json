@@ -1,0 +1,220 @@
+[
+  {
+    "type": "meta",
+    "text": "Effective Date: September 6, 2026  |  Last Updated: September 9, 2026"
+  },
+  {
+    "type": "h2",
+    "text": "1. Agreement to Terms"
+  },
+  {
+    "type": "p",
+    "text": "By downloading, installing, or using the CallRoom mobile application (\"App\"), you agree to these Terms of Use (\"Terms\") and our Privacy Policy. If you do not agree, do not use the App. These Terms form a binding agreement between you and Jinka Technologies, Inc. (\"Company,\" \"we,\" \"us\"), a Delaware corporation."
+  },
+  {
+    "type": "h2",
+    "text": "2. Who Can Use CallRoom"
+  },
+  {
+    "type": "p",
+    "text": "CallRoom is intended for licensed healthcare professionals, medical trainees, residents, fellows, students, advanced practice providers (APPs), and other authorized healthcare personnel in the United States who are 18 or older. CallRoom is not intended for use by patients or the general public, and we do not knowingly collect information from patients directly through the App."
+  },
+  {
+    "type": "p",
+    "text": "By using the App, you represent that you meet these criteria and that your use complies with any applicable institutional policies, including moonlighting, employment, or device use agreements at your sponsoring institution."
+  },
+  {
+    "type": "h2",
+    "text": "3. Not a Medical Device, Critical Limitation"
+  },
+  {
+    "type": "p",
+    "text": "CALLROOM IS A PERSONAL WORKFLOW AND ORGANIZATIONAL TOOL. IT IS NOT A MEDICAL DEVICE, CLINICAL DECISION SUPPORT SYSTEM, OR SUBSTITUTE FOR PROFESSIONAL MEDICAL JUDGMENT. NOTHING IN THE APP CONSTITUTES MEDICAL ADVICE. YOU ARE SOLELY RESPONSIBLE FOR ALL CLINICAL DECISIONS."
+  },
+  {
+    "type": "p",
+    "text": "AI-generated content, including operative notes, case preparation guides, CPT and ICD-10 code suggestions, clinical task parsing, and teaching questions, is produced by automated systems and may contain errors, omissions, or inaccurate information. All AI-generated content requires independent human review and verification by a licensed physician before use in any clinical record or for any clinical purpose."
+  },
+  {
+    "type": "h2",
+    "text": "4. Not an Official Medical Record System"
+  },
+  {
+    "type": "p",
+    "text": "CallRoom is not a substitute for your institution's electronic health record (EHR) or official documentation system. Content you create in the App is for personal workflow management only, the digital equivalent of the paper index cards and pocket notes residents have always used, and does not constitute an official medical record. You must not use CallRoom as your institution's official documentation system."
+  },
+  {
+    "type": "h2",
+    "text": "5. Patient Data and Your HIPAA Obligations"
+  },
+  {
+    "type": "p",
+    "text": "CallRoom does not currently operate as a HIPAA-covered entity or business associate for individual user accounts. You are solely responsible for ensuring your use of the App complies with HIPAA, your institution's privacy and security policies, and all applicable federal and state laws."
+  },
+  {
+    "type": "p",
+    "text": "CallRoom is designed to minimize entry of direct patient identifiers. When entering Board or Note content, use room numbers, bed numbers, or initials rather than full names, dates of birth, or medical record numbers. You are responsible for exercising professional judgment about what clinical detail is appropriate to enter, consistent with your institution's policies and applicable law."
+  },
+  {
+    "type": "p",
+    "text": "If your institution requires a Business Associate Agreement (BAA) before using CallRoom at the program or enterprise level, contact legal@callroom.md before institutional deployment."
+  },
+  {
+    "type": "h2",
+    "text": "6. Your Account and Authentication"
+  },
+  {
+    "type": "p",
+    "text": "You may create an account using email and password, Google Sign-In, or Apple Sign-In. You are responsible for maintaining the confidentiality of your credentials and for all activity under your account. Biometric authentication (Face ID / Touch ID) is handled entirely by your device's operating system via the device Secure Enclave, we never access, receive, or store biometric data. If you suspect unauthorized access, notify us immediately at support@callroom.md."
+  },
+  {
+    "type": "h2",
+    "text": "7. Acceptable Use"
+  },
+  {
+    "type": "p",
+    "text": "You agree not to:"
+  },
+  {
+    "type": "ul",
+    "items": [
+      "Enter individually identifiable patient PHI in violation of HIPAA or your institution's policies",
+      "Use AI-generated content in any clinical record without independent review and verification",
+      "Use the App for any unlawful purpose",
+      "Attempt to reverse engineer, decompile, or extract source code from the App",
+      "Share your account credentials with others",
+      "Use the App in a manner that could interfere with patient safety or clinical operations",
+      "Circumvent any security or access controls within the App"
+    ]
+  },
+  {
+    "type": "h2",
+    "text": "8. AI-Generated Content"
+  },
+  {
+    "type": "p",
+    "text": "The App uses Google Gemini via Firebase AI (Vertex AI) and may use other AI services to generate content including operative notes, case preparation guides, CPT and ICD-10 code suggestions, clinical task parsing, and teaching questions. All AI-generated content:"
+  },
+  {
+    "type": "ul",
+    "items": [
+      "May contain errors, omissions, fabricated citations, or inaccurate clinical information",
+      "Requires independent human verification before any clinical use",
+      "Is not a substitute for professional medical judgment or clinical training",
+      "Must be reviewed and attested by a licensed physician before inclusion in any medical record"
+    ]
+  },
+  {
+    "type": "p",
+    "text": "The Company is not liable for any clinical outcome, documentation error, coding error, or adverse event arising from reliance on AI-generated content without appropriate independent human review."
+  },
+  {
+    "type": "h2",
+    "text": "9. Plugins and Third-Party Content"
+  },
+  {
+    "type": "p",
+    "text": "CallRoom allows you to build custom \u201cPlugins\u201d, interactive HTML/JavaScript tools, and to share Plugins with other users or Teams. Shared or downloaded Plugins are not reviewed, vetted, or endorsed by the Company unless explicitly distributed through an official CallRoom Marketplace review process, if and when one exists."
+  },
+  {
+    "type": "p",
+    "text": "Plugins may access external websites and network services. Plugin content is not sandboxed from network access. A Plugin, including one shared with you by another user, could transmit data to, or retrieve content from, third-party servers outside the Company\u2019s control and outside any Business Associate Agreement covering CallRoom\u2019s core infrastructure."
+  },
+  {
+    "type": "p",
+    "text": "You acknowledge and agree that:"
+  },
+  {
+    "type": "ul",
+    "items": [
+      "You install, accept, run, and share Plugins entirely at your own risk;",
+      "You will never enter patient-identifiable information into any Plugin, regardless of source;",
+      "The Company is not liable for any data exposure, security incident, or harm arising from a Plugin\u2019s access to external networks or services;",
+      "You are responsible for reviewing a Plugin\u2019s behavior before use, particularly Plugins received from other users."
+    ]
+  },
+  {
+    "type": "h2",
+    "text": "10. Team and Collaboration Features"
+  },
+  {
+    "type": "p",
+    "text": "If you join or create a Team within CallRoom, content you choose to share with your Team becomes visible to other Team members according to the sharing permissions you select. You are responsible for the content you share within a Team. Team-shared content may persist after your individual account deletion where other Team members continue to rely on it."
+  },
+  {
+    "type": "h2",
+    "text": "11. Subscription and Payment"
+  },
+  {
+    "type": "p",
+    "text": "Certain features may require a CallRoom subscription (\"CallRoom Pro\"). By subscribing: (a) you authorize recurring charges at the applicable rate; (b) subscriptions auto-renew unless cancelled at least 24 hours before the renewal date; (c) you may cancel anytime through your App Store or Google Play account settings; (d) refunds are governed by Apple App Store or Google Play Store policies. We may modify pricing with reasonable advance notice."
+  },
+  {
+    "type": "h2",
+    "text": "12. Intellectual Property"
+  },
+  {
+    "type": "p",
+    "text": "All App content, design, code, and the CallRoom mark (U.S. Trademark Application Serial No. 50093036) are owned by Jinka Technologies, Inc. or its licensors. You retain ownership of all content you create in the App. By enabling cloud sync or Team features, you grant us a limited, non-exclusive license to store and transmit your content solely to provide the App's services. This license terminates when you delete your content or account."
+  },
+  {
+    "type": "h2",
+    "text": "13. Disclaimers and Limitation of Liability"
+  },
+  {
+    "type": "p",
+    "text": "THE APP IS PROVIDED \"AS IS\" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. TO THE MAXIMUM EXTENT PERMITTED BY LAW, JINKA TECHNOLOGIES, INC. SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES INCLUDING CLINICAL ERRORS, DATA LOSS, CODING ERRORS, OR PATIENT OUTCOMES. OUR TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNT YOU PAID US IN THE PRECEDING TWELVE MONTHS."
+  },
+  {
+    "type": "h2",
+    "text": "14. Indemnification"
+  },
+  {
+    "type": "p",
+    "text": "You agree to indemnify and hold harmless Jinka Technologies, Inc. and its officers, directors, employees, and agents from any claims, liabilities, damages, or expenses (including reasonable attorneys' fees) arising from your use of the App, violation of these Terms, or violation of any applicable law or third-party right."
+  },
+  {
+    "type": "h2",
+    "text": "15. Termination"
+  },
+  {
+    "type": "p",
+    "text": "We may suspend or terminate your access at any time for violation of these Terms. You may delete your account through Settings at any time. Upon account deletion, your personal data and clinical content will be removed from our servers within 30 days except where retention is required by law. See our Privacy Policy for details on Team content retention."
+  },
+  {
+    "type": "h2",
+    "text": "16. Governing Law and Dispute Resolution"
+  },
+  {
+    "type": "p",
+    "text": "These Terms are governed by the laws of the State of Delaware without regard to conflict of law principles. Disputes shall be resolved through binding arbitration under the rules of the American Arbitration Association in Delaware, except either party may seek injunctive relief in any court of competent jurisdiction."
+  },
+  {
+    "type": "h2",
+    "text": "17. Changes to These Terms"
+  },
+  {
+    "type": "p",
+    "text": "We may update these Terms periodically. Material changes will be communicated via in-app notice and by updating the date above. Continued use of the App after changes take effect constitutes acceptance of the revised Terms."
+  },
+  {
+    "type": "h2",
+    "text": "18. Contact"
+  },
+  {
+    "type": "p",
+    "text": "Legal and general inquiries: legal@callroom.md"
+  },
+  {
+    "type": "p",
+    "text": "Account support: support@callroom.md"
+  },
+  {
+    "type": "p",
+    "text": "Jinka Technologies, Inc.  |  jinkatechnologies.com  |  callroom.md"
+  },
+  {
+    "type": "p",
+    "text": "CallRoom is a product of Jinka Technologies, Inc.  \u2022  \"Built on call, for call\""
+  }
+]

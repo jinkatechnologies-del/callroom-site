@@ -1,0 +1,340 @@
+[
+  {
+    "type": "meta",
+    "text": "Last Updated: September 2026"
+  },
+  {
+    "type": "callout",
+    "text": "Jinka Technologies, Inc. has executed a Business Associate Agreement (BAA) with Google LLC covering all cloud infrastructure used to process Clinical Workflow Content in CallRoom. All services used to process protected health information are HIPAA-eligible. Data access audit logging, encryption at rest and in transit, and access controls are fully implemented. CallRoom's infrastructure is HIPAA-ready."
+  },
+  {
+    "type": "h2",
+    "text": "1. Compliance Status"
+  },
+  {
+    "type": "ul",
+    "items": [
+      "Google Cloud / Firebase BAA: \u2713 Executed and Active",
+      "Google Workspace BAA: \u2713 Accepted September 2026",
+      "Cloud Data Processing Addendum: \u2713 Accepted September 2026",
+      "HIPAA-Eligible Services: \u2713 All confirmed, see Section 4",
+      "Data Encryption in Transit: \u2713 TLS on all connections",
+      "Data Encryption at Rest: \u2713 AES-256-GCM, server-side",
+      "Data Access Audit Logging: \u2713 Fully implemented, 6-year retention",
+      "Access Controls and IAM Review: \u2713 Complete, September 2026",
+      "Privacy Policy and Terms of Use: \u2713 Published, required acceptance at signup",
+      "Trademark: U.S. Application No. 50093036 (Classes 009 and 042)",
+      "Provisional Patent: USPTO Application filed August 2026",
+      "Individual User BAA: Not applicable, individual use does not require a BAA",
+      "Enterprise / Institutional BAA: Available on request, legal@callroom.md"
+    ]
+  },
+  {
+    "type": "h2",
+    "text": "2. About Jinka Technologies and CallRoom"
+  },
+  {
+    "type": "p",
+    "text": "Jinka Technologies, Inc. is a Delaware C-Corporation founded in 2026 by Sanjay Jinka, M.D., a plastic surgery resident and physician. The Company develops CallRoom, a mobile and web-based clinical workflow management platform for surgical residents, attending physicians, medical students, and advanced practice providers."
+  },
+  {
+    "type": "p",
+    "text": "CallRoom provides AI-powered clinical task management, shift scheduling, clinical documentation, operative note generation, case preparation, CPT and ICD-10 code assistance, sign-out and handoff generation, wellness tracking, team coordination, and a clinician-built plugin system."
+  },
+  {
+    "type": "h2",
+    "text": "3. HIPAA Applicability"
+  },
+  {
+    "type": "h3",
+    "text": "3.1 Covered Entity Status"
+  },
+  {
+    "type": "p",
+    "text": "Jinka Technologies, Inc. is not a HIPAA covered entity. Covered entities are health plans, healthcare clearinghouses, and healthcare providers who transmit health information electronically in connection with covered transactions. Jinka Technologies is a healthcare software company and does not fall within these categories."
+  },
+  {
+    "type": "h3",
+    "text": "3.2 Business Associate Status"
+  },
+  {
+    "type": "p",
+    "text": "Jinka Technologies functions as a Business Associate under HIPAA in the following circumstances:"
+  },
+  {
+    "type": "ul",
+    "items": [
+      "Enterprise and institutional deployment: when a covered entity - such as a hospital, health system, residency program, or GME office, contracts with Jinka Technologies to provide CallRoom to its residents or staff, Jinka Technologies acts as a Business Associate of that covered entity. A Business Associate Agreement between Jinka Technologies and the institution is required before deployment. Contact legal@callroom.md to initiate the BAA process.",
+      "Individual user accounts: individual clinicians who download CallRoom as a personal workflow tool do not establish a business associate relationship with Jinka Technologies. Like the paper index cards and pocket notes residents have always used, individual use does not require a BAA."
+    ]
+  },
+  {
+    "type": "h2",
+    "text": "4. HIPAA-Eligible Infrastructure"
+  },
+  {
+    "type": "h3",
+    "text": "4.1 Cloud Infrastructure and Executed Agreements"
+  },
+  {
+    "type": "p",
+    "text": "CallRoom's cloud infrastructure runs on Google Cloud Platform and Firebase. Jinka Technologies has executed three agreements with Google LLC: (1) a Google Cloud Platform Business Associate Agreement covering all cloud infrastructure used to process Clinical Workflow Content; (2) a Google Workspace Business Associate Agreement; and (3) a Cloud Data Processing Addendum. All agreements are confirmed active. BAA coverage is verified on a regular basis through direct infrastructure inspection."
+  },
+  {
+    "type": "h3",
+    "text": "4.2 HIPAA-Eligible Services in Use"
+  },
+  {
+    "type": "p",
+    "text": "The following services are confirmed HIPAA-eligible under the executed Google Cloud BAA and are used in CallRoom's production environment:"
+  },
+  {
+    "type": "ul",
+    "items": [
+      "Cloud Firestore, document database for Clinical Workflow Content, user profiles, and team data",
+      "Firebase Authentication, user identity and access management",
+      "Cloud Functions, serverless application logic including AI processing and audit logging",
+      "A HIPAA-eligible large language model inference service.",
+      "Firebase Cloud Storage, file and document storage"
+    ]
+  },
+  {
+    "type": "h3",
+    "text": "4.3 Services Outside BAA Coverage"
+  },
+  {
+    "type": "ul",
+    "items": [
+      "Firebase Test Lab is not HIPAA-eligible and is never used with real patient data.",
+      "Push notification delivery infrastructure (Apple and Google push services) is outside BAA coverage. CallRoom uses on-device local notifications only. Notification content does not include patient-identifiable information. Any future server-triggered team notifications will use generic text only, with clinical details retrieved separately by the client after delivery."
+    ]
+  },
+  {
+    "type": "h3",
+    "text": "4.4 AI Processing and Data Residency"
+  },
+  {
+    "type": "p",
+    "text": "All AI features in CallRoom, including clinical task parsing, operative note generation, case preparation guides, CPT and ICD-10 code assistance, sign-out generation, and clinical teaching question generation, are processed server-side within U.S.-based Google Cloud regions. AI processing occurs within the scope of the executed Google Cloud BAA. No AI processing routes through global infrastructure that would place data outside U.S. control."
+  },
+  {
+    "type": "h2",
+    "text": "5. Encryption and Data Security"
+  },
+  {
+    "type": "h3",
+    "text": "5.1 Encryption in Transit"
+  },
+  {
+    "type": "p",
+    "text": "All data transmitted between CallRoom clients and cloud infrastructure uses TLS encryption. No Clinical Workflow Content is transmitted without encryption."
+  },
+  {
+    "type": "h3",
+    "text": "5.2 Encryption at Rest"
+  },
+  {
+    "type": "p",
+    "text": "Clinical Workflow Content stored in the cloud is encrypted at rest using AES-256-GCM. Encryption keys are managed server-side and are never exposed to client applications. Encryption and decryption occur exclusively within server-side application logic."
+  },
+  {
+    "type": "h3",
+    "text": "5.3 Local Device Encryption"
+  },
+  {
+    "type": "p",
+    "text": "Clinical Workflow Content stored locally on user devices is protected by iOS Data Protection, the device's native encryption layer. Sensitive credentials and access codes are stored in the iOS Keychain. Personal notes are not transmitted to the cloud unless the user explicitly invokes an AI feature."
+  },
+  {
+    "type": "h3",
+    "text": "5.4 Authentication Security"
+  },
+  {
+    "type": "p",
+    "text": "User passwords are stored using industry-standard cryptographic hashing. Plaintext passwords are never stored or transmitted. Biometric authentication (Face ID and Touch ID) is processed entirely by the device's secure hardware. Jinka Technologies never receives, stores, or processes biometric data."
+  },
+  {
+    "type": "h2",
+    "text": "6. Audit Controls"
+  },
+  {
+    "type": "p",
+    "text": "CallRoom implements a two-layer audit logging system covering all PHI-touching operations. Platform-level logs capture all database read and write events. Application-level logs capture real user identity for all PHI operations. Both layers are retained for 6 years."
+  },
+  {
+    "type": "h3",
+    "text": "6.1 Platform-Level Audit Logging"
+  },
+  {
+    "type": "p",
+    "text": "Data Access Audit Logs are enabled for all cloud database and storage services, capturing read and write events. Audit logs are routed to structured storage for querying and to a locked archive for long-term retention. Retention is set to 6 years, consistent with HIPAA documentation requirements under 45 CFR Section 164.530(j)."
+  },
+  {
+    "type": "h3",
+    "text": "6.2 Application-Level Audit Logging"
+  },
+  {
+    "type": "p",
+    "text": "Because cloud service accounts can mask individual user identity in platform logs, CallRoom implements an additional application-level audit trail that records the authenticated user identity for all PHI-touching operations, including data access, sharing, export, and AI processing calls."
+  },
+  {
+    "type": "p",
+    "text": "Application audit logs record actor identity, action type, resource type and identifier, team context, outcome, and timestamp. Audit logs are explicitly designed to contain no PHI, only the identifiers necessary to reconstruct what happened and who did it. This design was verified through testing to confirm no PHI leakage."
+  },
+  {
+    "type": "h3",
+    "text": "6.3 What Is Audited"
+  },
+  {
+    "type": "ul",
+    "items": [
+      "Clinical data access and display events",
+      "Sharing and unsharing of clinical content",
+      "Document export operations",
+      "Write and delete operations on clinical records",
+      "AI processing calls involving patient-adjacent content",
+      "Account deletion"
+    ]
+  },
+  {
+    "type": "h3",
+    "text": "6.4 Audit Log Access"
+  },
+  {
+    "type": "p",
+    "text": "Audit logs are accessible to authorized compliance reviewers only. No in-app interface exposes audit log content to end users. Logs can be queried by actor, resource, action type, and date range to support breach investigation, compliance review, and forensic inquiry."
+  },
+  {
+    "type": "h2",
+    "text": "7. Access Controls"
+  },
+  {
+    "type": "h3",
+    "text": "7.1 Identity and Authentication"
+  },
+  {
+    "type": "p",
+    "text": "All access to cloud-stored Clinical Workflow Content requires a valid authenticated session. The App supports email and password, Google Sign-In, and Apple Sign-In. Access controls are enforced at the database layer, users may only access their own data unless explicitly granted team-level access through the platform's team membership system."
+  },
+  {
+    "type": "h3",
+    "text": "7.2 Least-Privilege Access"
+  },
+  {
+    "type": "p",
+    "text": "A full access control review was conducted in September 2026. Cloud infrastructure access is scoped to the minimum permissions necessary for each component's function. Access to production infrastructure is restricted to authorized administrators. Production credentials are never embedded in source code or version control."
+  },
+  {
+    "type": "h3",
+    "text": "7.3 Server-Side AI Processing"
+  },
+  {
+    "type": "p",
+    "text": "All AI inference runs server-side, not on client devices. This architecture ensures that patient-adjacent content submitted to AI features passes through access-controlled server infrastructure rather than directly to external AI services from client applications."
+  },
+  {
+    "type": "h2",
+    "text": "8. Physical Safeguards"
+  },
+  {
+    "type": "p",
+    "text": "Jinka Technologies does not operate physical server infrastructure. All server-side processing and storage occurs on Google Cloud Platform, which maintains comprehensive physical security controls documented in Google Cloud's SOC 2 Type II reports and ISO 27001 certification. Production credentials and infrastructure access are managed through secure credential management systems."
+  },
+  {
+    "type": "h2",
+    "text": "9. Minimum Necessary Standard"
+  },
+  {
+    "type": "p",
+    "text": "CallRoom is designed to minimize collection and processing of patient-identifiable information:"
+  },
+  {
+    "type": "ul",
+    "items": [
+      "The App does not require entry of patient names, dates of birth, medical record numbers, or other direct identifiers. Users are instructed to use room numbers, bed numbers, or initials.",
+      "AI processing operates on text entered by the user. The system does not connect to or retrieve data from external EHR systems.",
+      "Push notifications do not contain patient-identifiable information.",
+      "Wellness tracking data is the user's own personal information and is maintained separately from Clinical Workflow Content.",
+      "Audit logs contain only identifiers, no PHI."
+    ]
+  },
+  {
+    "type": "h2",
+    "text": "10. User Responsibilities"
+  },
+  {
+    "type": "p",
+    "text": "Individual users are responsible for their own HIPAA compliance regarding content they enter into the App:"
+  },
+  {
+    "type": "ul",
+    "items": [
+      "Use room numbers, bed numbers, or patient initials rather than full names, dates of birth, or MRNs when entering clinical content.",
+      "Review and independently verify all AI-generated content before use in any medical record. AI-generated content requires physician review and attestation before inclusion in official documentation.",
+      "Exercise professional judgment about what clinical detail is appropriate to enter, consistent with your institution's policies.",
+      "Consult your institution's compliance office if you have questions about whether your specific use is consistent with your institution's HIPAA policies.",
+      "Contact legal@callroom.md before deploying CallRoom at the program or enterprise level to initiate the BAA process."
+    ]
+  },
+  {
+    "type": "h2",
+    "text": "11. Breach Notification"
+  },
+  {
+    "type": "p",
+    "text": "In the event of a breach of unsecured PHI, Jinka Technologies will comply with the HIPAA Breach Notification Rule (45 CFR Sections 164.400-414), including notifying affected individuals within 60 days of discovery, notifying the Secretary of HHS, and for breaches affecting 500 or more state residents, notifying prominent media outlets. Breach response will be coordinated with healthcare privacy counsel."
+  },
+  {
+    "type": "h2",
+    "text": "12. Enterprise and Institutional Deployment"
+  },
+  {
+    "type": "p",
+    "text": "Covered entities considering institutional deployment of CallRoom should contact Jinka Technologies to:"
+  },
+  {
+    "type": "ul",
+    "items": [
+      "Execute a Business Associate Agreement between your institution and Jinka Technologies, Inc.",
+      "Review audit logging and access control configurations",
+      "Discuss institution-specific data handling or security requirements",
+      "Establish administrative access and coordinate onboarding"
+    ]
+  },
+  {
+    "type": "p",
+    "text": "Enterprise and BAA inquiries: legal@callroom.md"
+  },
+  {
+    "type": "h2",
+    "text": "13. Updates to This Statement"
+  },
+  {
+    "type": "p",
+    "text": "This statement will be updated as our compliance posture evolves, upon execution of enterprise BAAs, addition of new infrastructure, or changes in applicable law or OCR guidance. The current version is maintained at callroom.md/hipaa."
+  },
+  {
+    "type": "h2",
+    "text": "14. Contact"
+  },
+  {
+    "type": "p",
+    "text": "HIPAA and compliance: legal@callroom.md"
+  },
+  {
+    "type": "p",
+    "text": "Privacy: privacy@callroom.md"
+  },
+  {
+    "type": "p",
+    "text": "Support: support@callroom.md"
+  },
+  {
+    "type": "p",
+    "text": "Jinka Technologies, Inc. | jinkatechnologies.com | callroom.md"
+  },
+  {
+    "type": "p",
+    "text": "CallRoom is a product of Jinka Technologies, Inc. \u2022 \"Built on call, for call\" \u2022 This statement should be reviewed by healthcare privacy counsel before use in enterprise sales or regulatory submissions."
+  }
+]
