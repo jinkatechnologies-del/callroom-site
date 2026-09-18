@@ -35,13 +35,13 @@ const features = [
     color: "text-purple",
   },
   {
-    title: "Hospital Contacts & Templates",
-    desc: "A directory and templates your team actually keeps current.",
+    title: "Attending Preferences",
+    desc: "CallRoom learns each attending's preferences over time, from notes to postop routines.",
     color: "text-teal",
   },
   {
     title: "Encrypted Resource Vault",
-    desc: "Hospital logins and access codes, encrypted, never in plaintext.",
+    desc: "Hospital logins, access codes, and contacts, encrypted and kept current.",
     color: "text-accent",
   },
 ];
@@ -53,7 +53,7 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <SkyBackground />
 
-        <div className="mx-auto flex max-w-6xl flex-col items-center px-6 pb-24 pt-24 text-center md:pt-32">
+        <div className="relative z-10 mx-auto flex max-w-6xl flex-col items-center px-6 pb-24 pt-24 text-center md:pt-32">
           <h1 className="max-w-3xl text-4xl font-extrabold leading-[1.1] tracking-tight md:text-6xl">
             Modern Medicine&apos;s
             <br />
@@ -111,65 +111,6 @@ export default function Home() {
               <p className="mt-2 text-[13px] leading-relaxed text-muted">{f.desc}</p>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* Team collaboration spotlight */}
-      <section className="border-y border-border bg-surface">
-        <div className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-2 md:items-center">
-          <div>
-            <span className="inline-block rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">
-              Team Collaboration
-            </span>
-            <h2 className="mt-4 text-2xl font-bold tracking-tight md:text-3xl">
-              Built for the whole team, not just you
-            </h2>
-            <p className="mt-4 text-muted">
-              A schedule only you can see isn&apos;t a schedule your team
-              can run on. CallRoom shares call schedules, task boards, and
-              hospital contacts across your whole team in real time, so
-              everyone is looking at the same information instead of five
-              different group texts.
-            </p>
-            <ul className="mt-6 space-y-2.5 text-sm text-muted">
-              <li className="flex items-start gap-2.5">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                Shared call schedules and task boards that update for
-                everyone at once
-              </li>
-              <li className="flex items-start gap-2.5">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                A phone directory that's actually current, not a PDF
-                someone forwarded three years ago
-              </li>
-              <li className="flex items-start gap-2.5">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                Role-aware visibility, so chiefs and juniors each see
-                what's relevant to them
-              </li>
-            </ul>
-          </div>
-
-          <div className="rounded-2xl border border-border bg-background p-6">
-            <p className="text-xs font-medium text-muted">Shared Board</p>
-            <div className="mt-3 space-y-2.5">
-              {[
-                { label: "Rm 412 - Post-op check", who: "JT" },
-                { label: "Rm 208 - Pain reassessment", who: "SK" },
-                { label: "Rm 315 - D/C summary", who: "You" },
-              ].map((row) => (
-                <div
-                  key={row.label}
-                  className="flex items-center justify-between rounded-xl border border-border bg-surface px-3.5 py-3"
-                >
-                  <span className="text-[13px] text-foreground/90">{row.label}</span>
-                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-accent/15 text-[10px] font-semibold text-accent">
-                    {row.who === "You" ? "Y" : row.who}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 
@@ -235,8 +176,67 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Team collaboration spotlight */}
+      <section className="border-y border-border bg-surface">
+        <div className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-2 md:items-center">
+          <div>
+            <span className="inline-block rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">
+              Team Collaboration
+            </span>
+            <h2 className="mt-4 text-2xl font-bold tracking-tight md:text-3xl">
+              Built for the whole team, not just you
+            </h2>
+            <p className="mt-4 text-muted">
+              A schedule only you can see isn&apos;t a schedule your team
+              can run on. CallRoom shares call schedules, task boards, and
+              hospital contacts across your whole team in real time, so
+              everyone is looking at the same information instead of five
+              different group texts.
+            </p>
+            <ul className="mt-6 space-y-2.5 text-sm text-muted">
+              <li className="flex items-start gap-2.5">
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                Shared call schedules and task boards that update for
+                everyone at once
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                A phone directory that's actually current, not a PDF
+                someone forwarded three years ago
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                Role-aware visibility, so chiefs and juniors each see
+                what's relevant to them
+              </li>
+            </ul>
+          </div>
+
+          <div className="rounded-2xl border border-border bg-background p-6">
+            <p className="text-xs font-medium text-muted">Shared Board</p>
+            <div className="mt-3 space-y-2.5">
+              {[
+                { label: "Rm 412 - Post-op check", who: "JT" },
+                { label: "Rm 208 - Pain reassessment", who: "SK" },
+                { label: "Rm 315 - D/C summary", who: "You" },
+              ].map((row) => (
+                <div
+                  key={row.label}
+                  className="flex items-center justify-between rounded-xl border border-border bg-surface px-3.5 py-3"
+                >
+                  <span className="text-[13px] text-foreground/90">{row.label}</span>
+                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-accent/15 text-[10px] font-semibold text-accent">
+                    {row.who === "You" ? "Y" : row.who}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA band */}
-      <section>
+      <section id="waitlist">
         <div className="mx-auto max-w-5xl px-6 py-20">
           <h2 className="text-center text-2xl font-bold tracking-tight md:text-3xl">
             Ready to get your program on CallRoom?
@@ -248,7 +248,8 @@ export default function Home() {
                 Program Admins
               </h3>
               <p className="mt-2 text-sm text-muted">
-                Create an account and set up your program today.
+                Program already set up with CallRoom? Create an admin
+                account and get started today.
               </p>
               <Link
                 href="/get-started"
@@ -263,7 +264,7 @@ export default function Home() {
                 Residents & Students
               </h3>
               <p className="mt-2 text-sm text-muted">
-                General sign-up is coming soon. Get on the list.
+                Be the first to hear updates and get on our list.
               </p>
               <div className="mt-5">
                 <WaitlistForm />

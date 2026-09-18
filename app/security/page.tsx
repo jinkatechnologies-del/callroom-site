@@ -14,7 +14,7 @@ const pillars = [
   {
     title: "Minimum necessary, by design",
     color: "text-purple",
-    desc: "CallRoom is built around room numbers, bed numbers, and initials rather than full patient names or medical record numbers, and guides users toward minimal identifiers from the first screen.",
+    desc: "CallRoom only collects what a clinical workflow actually needs, and never asks for more identifying detail than a task requires.",
   },
   {
     title: "AI runs server-side",

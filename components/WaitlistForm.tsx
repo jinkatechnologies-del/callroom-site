@@ -49,17 +49,28 @@ export default function WaitlistForm() {
         onChange={(e) => setEmail(e.target.value)}
         className="w-full rounded-full border border-border bg-background px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-accent"
       />
-      <select
-        value={role}
-        onChange={(e) => setRole(e.target.value)}
-        className="w-full rounded-full border border-border bg-background px-4 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-accent"
-      >
-        {roles.map((r) => (
-          <option key={r} value={r}>
-            {r}
-          </option>
-        ))}
-      </select>
+      <div className="relative w-full">
+        <select
+          value={role}
+          onChange={(e) => setRole(e.target.value)}
+          className="w-full appearance-none rounded-full border border-border bg-background px-4 py-2.5 pr-10 text-sm text-foreground outline-none transition-colors focus:border-accent"
+        >
+          {roles.map((r) => (
+            <option key={r} value={r}>
+              {r}
+            </option>
+          ))}
+        </select>
+        <svg
+          className="pointer-events-none absolute right-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={2}
+          stroke="currentColor"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+        </svg>
+      </div>
       <button
         type="submit"
         disabled={loading}

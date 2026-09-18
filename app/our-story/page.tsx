@@ -22,10 +22,11 @@ export default function OurStoryPage() {
         </p>
         <p>
           So the tool that seemed missing got built: a single home screen
-          for the floor. CallRoom brings together shift planning, patient
-          task tracking, clinical notes, and AI-assisted documentation,
-          designed around how clinical teams actually hand off care rather
-          than how a generic scheduling app assumes they should.
+          for your shift. CallRoom brings together schedule planning,
+          patient task tracking, clinical notes, and AI-assisted
+          documentation, designed around how clinical teams actually hand
+          off care rather than how a generic scheduling app assumes they
+          should.
         </p>
         <p>
           It&apos;s built with HIPAA-conscious, privacy-by-default
@@ -48,9 +49,9 @@ export default function OurStoryPage() {
           <Image
             src="/founder/sanjay-headshot.jpg"
             alt="Sanjay Jinka, MD, Founder of CallRoom"
-            width={112}
-            height={112}
-            className="h-28 w-28 shrink-0 rounded-xl object-cover"
+            width={128}
+            height={170}
+            className="h-[170px] w-32 shrink-0 rounded-xl object-cover"
           />
           <div>
             <p className="text-[15px] leading-relaxed text-foreground/90">

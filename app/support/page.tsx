@@ -28,8 +28,12 @@ export default function SupportPage() {
           Program Inquiries
         </h2>
         <p className="mt-1.5 text-sm text-muted">
-          Bringing CallRoom to your residency program? Tell us a bit about
-          it.
+          Wanting to bring CallRoom to your residency program? Tell us a
+          bit about it. If you're a resident looking to join instead,{" "}
+          <a href="/#waitlist" className="text-accent hover:underline">
+            get on the waitlist
+          </a>
+          .
         </p>
         <div className="mt-4">
           <ProgramInquiryForm />
