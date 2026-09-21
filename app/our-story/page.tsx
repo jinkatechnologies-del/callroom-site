@@ -55,10 +55,11 @@ export default function OurStoryPage() {
           />
           <div>
             <p className="text-[15px] leading-relaxed text-foreground/90">
-              &ldquo;I remember sitting up in bed one night, remembering I
-              forgot to sign a note. After going back to the hospital at
-              11 PM, I knew there had to be a better way. CallRoom is the
-              app I wish I had when I started residency.&rdquo;
+              &ldquo;I remember my first call shift looking down at a mess
+              of sticky notes, printed lists, broken pens, and a pounding
+              headache. After staying at the hospital 3 hours past my
+              shift ending, I knew there had to be a better way. CallRoom
+              is the app I wish I had when I started residency.&rdquo;
             </p>
             <p className="mt-4 text-sm font-semibold text-foreground">
               Sanjay Jinka, MD

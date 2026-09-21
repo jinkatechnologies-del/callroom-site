@@ -31,7 +31,7 @@ const features = [
   },
   {
     title: "Wellness Tracking",
-    desc: "Private, self-reported check-ins that stay yours unless you choose to share.",
+    desc: "Recharge during a shift, find resources for help, and track your productivity trends.",
     color: "text-purple",
   },
   {
@@ -60,9 +60,9 @@ export default function Home() {
             <span className="text-accent">Home Screen</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-muted">
-            CallRoom is the clinical workflow app that keeps residents on top
-            of schedules, patient tasks, and case prep, all in one place
-            built for the way training actually works.
+            CallRoom is the clinical workflow app that keeps providers on
+            top of tasks, prepared for cases, and adapts to their needs,
+            all in one place built for the fast-paced way medicine works.
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -243,7 +243,7 @@ export default function Home() {
           </h2>
 
           <div className="mt-10 grid gap-5 md:grid-cols-2">
-            <div className="rounded-2xl border border-border bg-surface p-6 text-center">
+            <div className="flex flex-col items-center justify-center rounded-2xl border border-border bg-surface p-6 text-center">
               <h3 className="text-sm font-semibold text-foreground">
                 Program Admins
               </h3>

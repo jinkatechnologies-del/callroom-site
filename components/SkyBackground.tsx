@@ -17,9 +17,6 @@ export default function SkyBackground({ className = "" }: { className?: string }
             <stop offset="55%" stopColor="#060810" />
             <stop offset="100%" stopColor="#060810" />
           </linearGradient>
-          <filter id="moon-soft" x="-50%" y="-50%" width="200%" height="200%">
-            <feGaussianBlur stdDeviation="1.2" />
-          </filter>
         </defs>
 
         <rect width="1200" height="700" fill="url(#sky-fade)" />
@@ -40,11 +37,12 @@ export default function SkyBackground({ className = "" }: { className?: string }
           <circle cx="760" cy="220" r="1.5" opacity="0.4" />
         </g>
 
-        {/* Moon: soft thin crescent */}
-        <g filter="url(#moon-soft)">
-          <circle cx="150" cy="90" r="42" fill="#EDF2FF" opacity="0.9" />
-          <circle cx="163" cy="80" r="39" fill="#0b1024" />
-        </g>
+        {/* Moon: single-path crescent, crisp at any size */}
+        <path
+          d="M150,50 A40,40 0 0,0 150,130 A58,58 0 0,1 150,50 Z"
+          fill="#EDF2FF"
+          opacity="0.92"
+        />
       </svg>
     </div>
   );
