@@ -42,11 +42,12 @@ function AppleIcon() {
 }
 
 function friendlyOAuthError(err: AuthError): string {
+  console.error("OAuth sign-in error:", err.code, err.message);
   if (err.code === "auth/popup-closed-by-user") return "";
   if (err.code === "auth/account-exists-with-different-credential") {
     return "That email is already linked to a different sign-in method.";
   }
-  return "Something went wrong signing you in. Please try again.";
+  return `Something went wrong signing you in (${err.code}). Please try again.`;
 }
 
 export default function OAuthButtons() {
