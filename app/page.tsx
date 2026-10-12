@@ -67,10 +67,10 @@ export default function Home() {
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Link
-              href="/get-started"
+              href="/#waitlist"
               className="rounded-full bg-accent px-7 py-3 text-sm font-semibold text-background transition-colors hover:bg-accent-hover"
             >
-              Get Started
+              Join Waitlist
             </Link>
             <Link
               href="/our-story"
@@ -242,26 +242,10 @@ export default function Home() {
             Ready to get your program on CallRoom?
           </h2>
 
-          <div className="mt-10 grid gap-5 md:grid-cols-2">
-            <div className="flex flex-col items-center justify-center rounded-2xl border border-border bg-surface p-6 text-center">
-              <h3 className="text-sm font-semibold text-foreground">
-                Program Admins
-              </h3>
-              <p className="mt-2 text-sm text-muted">
-                Program already set up with CallRoom? Create an admin
-                account and get started today.
-              </p>
-              <Link
-                href="/get-started"
-                className="mt-5 inline-block rounded-full bg-accent px-6 py-2.5 text-sm font-semibold text-background transition-colors hover:bg-accent-hover"
-              >
-                Get Started
-              </Link>
-            </div>
-
+          <div className="mx-auto mt-10 max-w-md">
             <div className="rounded-2xl border border-border bg-surface p-6 text-center">
               <h3 className="text-sm font-semibold text-foreground">
-                Residents & Students
+                Join the waitlist
               </h3>
               <p className="mt-2 text-sm text-muted">
                 Be the first to hear updates and get on our list.

@@ -50,7 +50,12 @@ function friendlyOAuthError(err: AuthError): string {
   return `Something went wrong signing you in (${err.code}). Please try again.`;
 }
 
-export default function OAuthButtons() {
+export default function OAuthButtons({
+  redirectTo = "/dashboard",
+}: {
+  /** Where to go after sign-in. Pass null to stay on the page. */
+  redirectTo?: string | null;
+} = {}) {
   const router = useRouter();
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState<"google" | "apple" | null>(null);
@@ -60,7 +65,7 @@ export default function OAuthButtons() {
     setLoading("google");
     try {
       await signInWithPopup(auth, new GoogleAuthProvider());
-      router.push("/get-started?status=signed-in");
+      if (redirectTo) router.push(redirectTo);
     } catch (err) {
       const msg = friendlyOAuthError(err as AuthError);
       if (msg) setError(msg);
@@ -77,7 +82,7 @@ export default function OAuthButtons() {
       provider.addScope("email");
       provider.addScope("name");
       await signInWithPopup(auth, provider);
-      router.push("/get-started?status=signed-in");
+      if (redirectTo) router.push(redirectTo);
     } catch (err) {
       const msg = friendlyOAuthError(err as AuthError);
       if (msg) setError(msg);

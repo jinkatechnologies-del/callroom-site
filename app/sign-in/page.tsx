@@ -38,7 +38,7 @@ export default function SignInPage() {
     setLoading(true);
     try {
       await signInWithEmailAndPassword(auth, email.trim(), password);
-      router.push("/get-started?status=signed-in");
+      router.push("/dashboard");
     } catch (err) {
       setError(friendlyError(err as AuthError));
     } finally {

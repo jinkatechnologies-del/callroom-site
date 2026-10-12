@@ -1,6 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "@/lib/firebase";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -13,6 +15,9 @@ const navLinks = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [signedIn, setSignedIn] = useState(false);
+
+  useEffect(() => onAuthStateChanged(auth, (u) => setSignedIn(!!u)), []);
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
@@ -49,17 +54,21 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-2 sm:gap-3">
+          {/* Signed-in admins keep a way back to the dashboard. Sign In is
+              hidden from the public nav while the site is waitlist-only. */}
+          {signedIn && (
+            <Link
+              href="/dashboard"
+              className="text-sm font-medium text-muted transition-colors hover:text-foreground"
+            >
+              Dashboard
+            </Link>
+          )}
           <Link
-            href="/sign-in"
-            className="text-sm font-medium text-muted transition-colors hover:text-foreground"
-          >
-            Sign In
-          </Link>
-          <Link
-            href="/get-started"
+            href="/#waitlist"
             className="rounded-full bg-accent px-3.5 py-2 text-sm font-semibold text-background transition-colors hover:bg-accent-hover sm:px-4"
           >
-            Get Started
+            Join Waitlist
           </Link>
 
           {/* Mobile menu toggle */}

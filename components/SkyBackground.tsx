@@ -21,20 +21,19 @@ export default function SkyBackground({ className = "" }: { className?: string }
 
         <rect width="1200" height="700" fill="url(#sky-fade)" />
 
-        {/* Stars */}
+        {/* Stars. The headline sits centered near the top, so the band
+            x 220-980 / y 0-320 is deliberately kept empty: on a phone the
+            SVG slices to roughly that center strip, and any star there
+            lands right beside the words. */}
         <g fill="#EDF2FF">
-          <circle cx="120" cy="90" r="2" opacity="0.5" />
-          <circle cx="260" cy="150" r="1.5" opacity="0.4" />
-          <circle cx="400" cy="70" r="2" opacity="0.6" />
-          <circle cx="520" cy="180" r="1.5" opacity="0.35" />
-          <circle cx="680" cy="100" r="2" opacity="0.5" />
-          <circle cx="800" cy="60" r="1.5" opacity="0.4" />
-          <circle cx="940" cy="150" r="2" opacity="0.55" />
-          <circle cx="1060" cy="90" r="1.5" opacity="0.4" />
-          <circle cx="1150" cy="200" r="2" opacity="0.45" />
-          <circle cx="60" cy="220" r="1.5" opacity="0.35" />
-          <circle cx="340" cy="230" r="1.5" opacity="0.4" />
-          <circle cx="760" cy="220" r="1.5" opacity="0.4" />
+          <circle cx="70" cy="80" r="2" opacity="0.5" />
+          <circle cx="150" cy="210" r="1.5" opacity="0.35" />
+          <circle cx="40" cy="300" r="1.5" opacity="0.4" />
+          <circle cx="200" cy="350" r="1.5" opacity="0.3" />
+          <circle cx="1030" cy="70" r="2" opacity="0.5" />
+          <circle cx="1120" cy="180" r="1.5" opacity="0.4" />
+          <circle cx="1160" cy="60" r="1.5" opacity="0.35" />
+          <circle cx="1015" cy="280" r="1.5" opacity="0.3" />
         </g>
 
         {/* Moon: single-path crescent, crisp at any size */}

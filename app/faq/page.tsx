@@ -24,8 +24,8 @@ const faqs = [
     ),
   },
   {
-    q: "Can I sign up as an individual resident right now?",
-    a: "General resident sign-up is coming soon. Today, Program Coordinators and Admins can create an account to set up their program, and residents join through their program's admin.",
+    q: "Can I sign up right now?",
+    a: "Not yet. CallRoom is in a limited rollout while we onboard our first programs. Join the waitlist and we'll reach out as soon as sign-up opens, whether you're an individual provider or setting up a whole program.",
   },
   {
     q: "What is the Plugin Builder?",

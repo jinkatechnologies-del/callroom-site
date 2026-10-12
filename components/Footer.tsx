@@ -9,9 +9,10 @@ const legalLinks = [
 ];
 
 const socialLinks = [
-  { href: "https://www.tiktok.com/", label: "TikTok" },
-  { href: "https://www.instagram.com/", label: "Instagram" },
-  { href: "https://www.linkedin.com/", label: "LinkedIn" },
+  {
+    href: "https://www.instagram.com/callroom.md?vrfl=YXp2Z3h3MHNoc3Vi",
+    label: "Instagram",
+  },
 ];
 
 export default function Footer() {
