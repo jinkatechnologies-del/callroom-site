@@ -1,7 +1,7 @@
 [
   {
     "type": "meta",
-    "text": "Effective Date: September 6, 2026  |  Last Updated: September 9, 2026"
+    "text": "Effective Date: September 6, 2026  |  Last Updated: October 15, 2026"
   },
   {
     "type": "p",
@@ -9,7 +9,7 @@
   },
   {
     "type": "p",
-    "text": "HIPAA NOTICE: CallRoom is a personal workflow tool, not an official medical record system. Do not use it as a substitute for your institution's EHR. If you choose to enter patient-identifiable information, you are solely responsible for HIPAA compliance. See Section 6 for details."
+    "text": "HIPAA NOTICE: CallRoom is a personal workflow tool, not an official medical record system. Do not use it as a substitute for your institution's EHR. Content you enter may include patient information, and you are responsible for using CallRoom consistently with HIPAA and your institution's policies. See Section 6 for details."
   },
   {
     "type": "h2",
@@ -42,12 +42,13 @@
   {
     "type": "ul",
     "items": [
-      "Board entries (patient task tracking using room/bed identifiers or initials, see Section 6 on patient data)",
+      "Board entries (patient task tracking, which may include patient names, room or bed numbers, chief complaints, and notes; see Section 6 on patient data)",
       "Planner and call schedule entries",
       "Clinical notes and AI-generated bullet summaries",
       "Operative note drafts and case preparation guides generated using AI features",
       "Attending physician preferences and contact information you choose to record",
-      "Sign-out content and handoff documentation"
+      "Sign-out content and handoff documentation",
+      "Photos, screenshots, or PDF files of schedules that you choose to import into the Planner"
     ]
   },
   {
@@ -84,7 +85,7 @@
   },
   {
     "type": "p",
-    "text": "When you use AI features, including clinical task parsing, operative note generation, case preparation guides, PIMP question generation, CPT and ICD-10 code suggestions, and sign-out generation, your input text is transmitted to Google Gemini via Firebase AI (Vertex AI) for processing. See Section 5.2 for details."
+    "text": "When you use AI features, including clinical task parsing, operative note generation, case preparation guides, PIMP question generation, CPT and ICD-10 code suggestions, and sign-out generation, your input text is transmitted to Google Gemini via Firebase AI (Vertex AI) for processing. If you use schedule import, the photos, screenshots, or PDF files you select are also transmitted for processing. See Section 5.2 for details."
   },
   {
     "type": "h3",
@@ -96,11 +97,11 @@
   },
   {
     "type": "h3",
-    "text": "2.8 What We Do Not Collect"
+    "text": "2.8 Patient Information and Payment Data"
   },
   {
     "type": "p",
-    "text": "We do not intentionally collect patient names, dates of birth, medical record numbers, Social Security numbers, or other direct patient identifiers. We do not collect payment card details beyond what is necessary for subscription processing, which is handled by Apple App Store or Google Play."
+    "text": "Clinical Workflow Content you enter may include patient information. We treat it as part of your Clinical Workflow Content and handle it as described in Sections 5 and 6. We do not collect payment card details beyond what is necessary for subscription processing, which is handled by Apple App Store or Google Play."
   },
   {
     "type": "h2",
@@ -166,7 +167,15 @@
   },
   {
     "type": "p",
-    "text": "AI PROCESSING NOTICE: When you use AI features, your input text is transmitted to Google Gemini via Firebase AI / Vertex AI. Avoid entering individually identifiable patient information (names, MRNs, dates of birth) in AI-parsed fields. We are working to establish and confirm Business Associate Agreements with Google Cloud covering AI processing infrastructure and will update this Policy when that status is confirmed."
+    "text": "AI PROCESSING NOTICE: When you use AI features, your input text is transmitted to Google Gemini via Firebase AI / Vertex AI, and that text may include patient information you have entered. Vertex AI processing is covered by our Business Associate Agreement with Google Cloud (see Section 5.3). Include only the patient information you need for the task, consistent with your institution's policies."
+  },
+  {
+    "type": "p",
+    "text": "SCHEDULE PHOTO IMPORT: If you use the Planner's schedule import, the photos or screenshots you select are resized on your device and sent to Google Gemini via Vertex AI to read the schedule entries in them. PDF files you select are sent the same way without resizing. We use these images to suggest schedule entries, which you review before they are added to your Planner. CallRoom does not keep these images: they are discarded when the request finishes (within about two minutes) and are not saved to Cloud Storage, Firestore, or our logs, which record only counts such as the number of pages. Schedule images, such as OR schedules, may contain patient information. They are processed under the same Business Associate Agreement described in Section 5.3."
+  },
+  {
+    "type": "p",
+    "text": "AI NOTE TAGS: To help connect related notes and planner entries, CallRoom may automatically generate short topic tags for your notes using the same AI service, which sends the note's text for processing. These tags are stored with the note, are not shown to you, and are used only inside the App to organize and match your content."
   },
   {
     "type": "h3",
@@ -174,7 +183,7 @@
   },
   {
     "type": "p",
-    "text": "Jinka Technologies, Inc. is actively pursuing a Business Associate Agreement (BAA) with Google Cloud covering the infrastructure used to process Clinical Workflow Content. Enterprise or institutional deployments requiring a confirmed BAA between Jinka Technologies and your institution should contact legal@callroom.md before program-wide deployment."
+    "text": "Jinka Technologies, Inc. has a Business Associate Agreement (BAA) in place with Google Cloud covering the HIPAA-eligible Google Cloud services used to process Clinical Workflow Content, including Cloud Firestore, Cloud Functions, Cloud Storage, and Vertex AI. This BAA is between Jinka Technologies and Google Cloud; it does not by itself create a BAA between Jinka Technologies and your institution. Enterprise or institutional deployments requiring a BAA with Jinka Technologies should contact legal@callroom.md before program-wide deployment."
   },
   {
     "type": "h3",
@@ -205,12 +214,20 @@
     "text": "Do not enter patient-identifiable information into any Plugin. We recommend caution when installing or running Plugins shared by other users, particularly regarding any information a Plugin might send externally. The Company is not responsible for the data practices of any third-party website or service a Plugin may access."
   },
   {
+    "type": "h3",
+    "text": "5.7 Plugin Share Links"
+  },
+  {
+    "type": "p",
+    "text": "When you share a Plugin by link, we create a random link token and store only a one-way hash of it, along with a copy of the Plugin, your account and display name, the creation time, the expiry (7 days), how many people have opened it, and the accounts of the people who opened it. Anyone signed in to CallRoom who has the link can request a copy of the Plugin, up to 50 people, until the link expires or you revoke it, so send share links only to people you trust. Each person who opens the link receives a pending invite that they can accept or decline."
+  },
+  {
     "type": "h2",
     "text": "6. Your Responsibility Regarding Patient Information"
   },
   {
     "type": "p",
-    "text": "CallRoom is designed to minimize entry of direct patient identifiers. When entering Board or Note content, use room numbers, bed numbers, or patient initials rather than full names, dates of birth, or medical record numbers. You are responsible for:"
+    "text": "CallRoom is built for clinical workflow, and the Clinical Workflow Content you enter may include patient information. Include only the patient information you need, consistent with the minimum necessary standard and your institution's policies. You are responsible for:"
   },
   {
     "type": "ul",
@@ -297,6 +314,6 @@
   },
   {
     "type": "p",
-    "text": "CallRoom is a product of Jinka Technologies, Inc.  \u2022  \"Built on call, for call\""
+    "text": "CallRoom is a product of Jinka Technologies, Inc.  •  \"Built on call, for call\""
   }
 ]
